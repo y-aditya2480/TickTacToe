@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    background-color: black;
+    color: white;
+    height: 50px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    font-family: 'Bungee Spice', cursive;
+}
+
+
+nav ul{
+    list-style: none;
+}
+
+.gameContainer{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);               /*THE DIMENSIONS ARE GIVEN IN VW TO MAKE THE WEBSITE RESPONSIVE...*/
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Bungee Spice', cursive;
+    
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 6vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;                  /*TO BRING X TO THE CENTER USE FLEX BOX, AND LEARN THE FLEX BOX THROUGHLY...*/
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(199, 173, 224);
+}
+
+
+.gameInfo{
+    padding: 0 30px;
+    font-family: 'Bungee Spice', cursive;
+}
+
+
+
+.imgBox img{
+    width: 0px;
+    transition: width 1s ease-in-out;
+}
+
+.br-0{                         /*THESE ARE THE CLASSES USED TO REMOVE A PART OF THE BORDER IN THE TABLE*/
+    border-right: 0;               /*HERE BR MEANS BORDER RIGHT
+                                    BT:- BORDER TOP
+                                    BL:- BORDER LEFT
+                                    BB:- BORDER BOTTOM    */
+}
+
+.bl-0{
+    border-left: 0;
+} 
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    
+}
